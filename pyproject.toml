@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cube-pka"
+version = "0.1.0rc1"
+description = "Site-resolved acidic and basic pKa prediction with Cube-pKa V4"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "min0210"}]
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "chemprop>=2.2,<2.3",
+  "numpy>=1.26",
+  "rdkit>=2024.03",
+  "torch>=2.2,<3",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Chemistry",
+]
+
+[project.urls]
+Repository = "https://github.com/min0210/Cube-pKa"
+Issues = "https://github.com/min0210/Cube-pKa/issues"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+cube-pka = "cubepka.predict:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+license-files = ["LICENSE", "LICENSES/*.txt", "THIRD_PARTY_NOTICE.md"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"cubepka.resources" = ["*.pt", "*.json", "*.tsv"]

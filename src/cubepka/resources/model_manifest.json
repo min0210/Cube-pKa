@@ -1,0 +1,43 @@
+{
+  "candidate_policy": "MolGpKa SMARTS snapshot afe09024; base excludes N directly bonded to S(=O)2",
+  "models": {
+    "acid": {
+      "checkpoint": "cube_pka_v4_acid.pt",
+      "checkpoint_sha256": "3b8c7226057bc67ee9199f0cad62dc7bf8e79a5c5b06870428f70724a260a9d0",
+      "fine_tune_best_epoch": 102,
+      "fine_tune_validation_site_mae": 0.6530504067359506,
+      "model_config": {
+        "architecture": "legacy",
+        "atom_dim": 72,
+        "bond_dim": 14,
+        "depth": 3,
+        "distance_decay": 0.1,
+        "dropout": 0.1,
+        "ffn_hidden_dim": 300,
+        "hidden_dim": 300,
+        "shell_count": 3
+      }
+    },
+    "base": {
+      "checkpoint": "cube_pka_v4_base.pt",
+      "checkpoint_sha256": "4bc85bf8e06796453ed6c108e3f4e7eb2854a6dcb13baf707f8eadfd08c8a150",
+      "fine_tune_best_epoch": 98,
+      "fine_tune_validation_site_mae": 0.5097626193439792,
+      "model_config": {
+        "architecture": "legacy",
+        "atom_dim": 72,
+        "bond_dim": 14,
+        "depth": 4,
+        "distance_decay": 0.1,
+        "dropout": 0.1,
+        "ffn_hidden_dim": 300,
+        "hidden_dim": 300,
+        "shell_count": 3
+      }
+    }
+  },
+  "model_version": "Cube-pKa V4 legacy fine-tune",
+  "schema_version": 1,
+  "smarts_sha256": "afe09024b05c3c47f4f0ec938590692147e54cc5ec1467eb9fe1dc09080a824f",
+  "training_seed": 19980210
+}

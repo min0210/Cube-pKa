@@ -1,0 +1,5 @@
+id,smiles,task
+aspirin,CC(=O)Oc1ccccc1C(=O)O,acid
+ibuprofen,CC(C)Cc1ccc(cc1)C(C)C(=O)O,acid
+lidocaine,CCN(CC)CC(=O)Nc1c(C)cccc1C,base
+diphenhydramine,CN(C)CCOC(c1ccccc1)c1ccccc1,base
