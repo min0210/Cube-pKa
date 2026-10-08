@@ -35,8 +35,10 @@ python -m pip install --upgrade pip
 python -m pip install -e .
 ```
 
-The reference environment used Python 3.11.15, Chemprop 2.2.3, PyTorch 2.7.1,
-RDKit 2025.09.6 and NumPy 2.4.1.
+The frozen inference environment uses Python 3.11, Chemprop 2.2.3, PyTorch
+2.7.1, RDKit 2025.09.6 and NumPy 2.4.1. These versions are pinned because
+checkpoint-level numerical reproduction has not yet been established for other
+dependency versions.
 
 ## Single-molecule prediction
 

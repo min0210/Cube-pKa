@@ -11,10 +11,10 @@ license = {file = "LICENSE"}
 authors = [{name = "min0210"}]
 requires-python = ">=3.11,<3.13"
 dependencies = [
-  "chemprop>=2.2,<2.3",
-  "numpy>=1.26",
-  "rdkit>=2024.03",
-  "torch>=2.2,<3",
+  "chemprop==2.2.3",
+  "numpy==2.4.1",
+  "rdkit==2025.09.6",
+  "torch==2.7.1",
 ]
 classifiers = [
   "Development Status :: 4 - Beta",

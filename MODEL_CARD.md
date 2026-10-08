@@ -75,4 +75,6 @@ post-selection confirmation sets. Results come from one training seed.
 
 The package verifies exact checkpoint and candidate-pattern SHA-256 hashes at
 runtime. `src/cubepka/resources/model_manifest.json` records model
-configurations, best epochs, validation site MAE values and training seed.
+configurations, best epochs, validation site MAE values and training seed. The
+inference dependency versions are pinned to the environment used for release
+verification.
